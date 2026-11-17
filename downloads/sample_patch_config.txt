@@ -1,0 +1,12 @@
+# Developer Modification Patch (Sample)
+# Project Profile & Download Hub
+Version: 1.0.0
+Author: Developer
+Category: Modification
+Checksum: a1b2c3d4e5f67890
+
+[PATCH INSTRUCTIONS]
+1. Copy target assets to designated folder.
+2. Run installation script.
+3. Restart application.
+

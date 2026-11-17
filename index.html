@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SR-RG // Projects, Tools &amp; Download Hub</title>
+  <meta name="description"
+    content="SR-RG personal developer project showcase and download hub for system modifications, tools, firmware patches, and automation scripts.">
+
+  <!-- Favicon using exact requested logo -->
+  <link rel="icon" type="image/jpeg" href="./assets/images/Gemini_Generated_Image_p4wulop4wulop4wu.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- ARGB Flowing Neon Top Lightstrip (100% GPU Hardware Accelerated) -->
+  <div class="argb-lightstrip" id="argb-lightstrip" aria-hidden="true"></div>
+
+  <!-- ==============================================================================
+   * HEADER / NAVBAR
+   * ============================================================================== -->
+  <header class="header-nav" id="header-nav">
+    <div class="container nav-content">
+      <a href="#home" class="nav-brand">
+        <div class="brand-logo-wrap">
+          <img src="./assets/images/Gemini_Generated_Image_p4wulop4wulop4wu.jpg" alt="Developer Hub Logo"
+            class="brand-logo-img">
+        </div>
+        <div class="brand-title-group">
+          <span class="brand-main-text">SR-RG<span class="text-green">.DEV</span></span>
+          <span class="brand-sub-text">PROJECTS &amp; DOWNLOAD HUB</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#downloads" class="nav-link">Downloads</a></li>
+          <li><a href="#github" class="nav-link">GitHub</a></li>
+          <li>
+            <a href="https://github.com/SR-RG" target="_blank" rel="noopener noreferrer" class="nav-cta-github"
+              data-profile-href="githubUrl">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        [ MENU ]
+      </button>
+    </div>
+  </header>
+
+  <!-- ==============================================================================
+   * HERO SECTION
+   * ============================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-box">
+        <!-- Terminal Window Header -->
+        <div class="window-bar">
+          <div class="window-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="window-title">session: ~/sr-rg/welcome.sh (bash)</span>
+          <span class="mono text-green" style="font-size:0.75rem;">ONLINE</span>
+        </div>
+
+        <!-- Terminal Window Content -->
+        <div class="hero-content">
+          <div class="hero-text-col">
+            <div class="terminal-badge">
+              <span class="pulse-led"></span>
+              <span data-profile="badge">SYSTEM ONLINE // v2.4.0</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="hero-title-prefix">&gt; </span>SR-RG // <br>
+              <span class="text-gradient-cyan">PROJECTS &amp; DOWNLOAD HUB</span>
+            </h1>
+
+            <p class="hero-subtitle mono" data-profile="tagline">
+              SR-RG // Developer, System Modder, and Retro-Computing Enthusiast
+            </p>
+
+            <p class="hero-description" data-profile="shortBio">
+              Pusat resmi berbagi karya proyek, modifikasi sistem, tools otomasi, dan repository publik oleh SR-RG.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>[ Explore Projects ]</span>
+              </a>
+              <a href="#downloads" class="btn btn-cyan">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>[ Download Center ]</span>
+              </a>
+              <a href="https://github.com/SR-RG" target="_blank" rel="noopener noreferrer" class="btn btn-outline"
+                data-profile-href="githubUrl">
+                <span>[ GitHub Profile ]</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Avatar Box using exact user logo -->
+          <div class="hero-avatar-box">
+            <div class="avatar-frame">
+              <div class="avatar-inner">
+                <img src="./assets/images/Gemini_Generated_Image_p4wulop4wulop4wu.jpg" alt="Developer Profile Identity"
+                  class="avatar-img">
+              </div>
+            </div>
+            <span class="avatar-caption">STATUS: VERIFIED DEVELOPER</span>
+          </div>
+        </div>
+
+        <!-- Hero Stats Ribbon -->
+        <div class="hero-stats-ribbon">
+          <div class="stat-item">
+            <div class="stat-num text-green" id="stat-projects">12+</div>
+            <div class="stat-label">Projects Published</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num text-cyan" id="stat-downloads">48+</div>
+            <div class="stat-label">Downloadable Files</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num text-purple" id="stat-repos">8+</div>
+            <div class="stat-label">GitHub Repos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num text-green mono" id="stat-visitors">000001</div>
+            <div class="stat-label">Live Visitors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+   * ABOUT ME SECTION
+   * ============================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ 01 // PROFILE ]</span>
+        <h2 class="section-title">ABOUT THE DEVELOPER</h2>
+        <p class="section-desc">Identitas pengembang, keahlian modifikasi sistem, dan teknologi yang digunakan.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Bio Card -->
+        <div class="about-card">
+          <div class="window-bar">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="window-title">bio.md</span>
+            <span></span>
+          </div>
+          <div class="card-body">
+            <h3 class="mono text-green" style="margin-bottom: 12px;" data-profile="developerName">Developer / Modder
+            </h3>
+            <p class="about-text" data-profile="aboutDescription">
+              Saya adalah seorang pengembang dan enthusiast modifikasi sistem. Melalui hub ini, saya mengarsipkan dan
+              membagikan berbagai tools, script otomasi, patch firmware, modifikasi Android, dan perbaikan sistem
+              operasi warisan yang dapat diakses dan diunduh secara bebas oleh komunitas.
+            </p>
+
+            <h4 class="skills-title mono">&gt; SPECIALIZED COMPETENCIES:</h4>
+            <div class="skills-wrap" id="skills-wrap">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal System Specs Card (Neofetch style) -->
+        <div class="specs-card">
+          <div class="window-bar">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="window-title">neofetch // system_info</span>
+            <span></span>
+          </div>
+          <div class="card-body">
+            <div class="specs-list">
+              <div class="spec-row">
+                <span class="spec-key">USER</span>
+                <span class="spec-val" data-profile="alias">SR-RG</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">HOST</span>
+                <span class="spec-val">PROJECT_DOWNLOAD_HUB</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">DEV_RIG</span>
+                <span class="spec-val text-green">Apple MacBook2,1 (Tiger 10.4)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">TOTAL_VISITORS</span>
+                <span class="spec-val text-green mono" id="live-visitor-count">1 VISITORS</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">VISITOR_GPU</span>
+                <span class="spec-val text-cyan" id="gpu-device-name">PROBING_GPU...</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">RENDER_MODE</span>
+                <span class="spec-val text-green" id="gpu-render-mode">GPU_ACCELERATED</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">PRIMARY_OS</span>
+                <span class="spec-val">Darwin / Linux / Android</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">TARGETS</span>
+                <span class="spec-val">C99, Bash, QuickJS, Gecko</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key">STATUS</span>
+                <span class="spec-val text-green">READY_FOR_DEPLOY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+   * PROJECT SHOWCASE SECTION
+   * ============================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ 02 // REPOSITORIES ]</span>
+        <h2 class="section-title">PROJECT SHOWCASE</h2>
+        <p class="section-desc">Koleksi proyek utama, modifikasi browser, tools otomasi, dan integrasi firmware.</p>
+      </div>
+
+      <!-- Projects Grid (Rendered dynamically from js/downloads.js) -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+   * DOWNLOAD CENTER SECTION (CORE FEATURE)
+   * ============================================================================== -->
+  <section class="section download-section" id="downloads">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ 03 // ARCHIVE ]</span>
+        <h2 class="section-title">DOWNLOAD CENTER</h2>
+        <p class="section-desc">Pusat unduhan langsung untuk file modifikasi, aplikasi, firmware, tools, dan script.</p>
+      </div>
+
+      <!-- Control Panel: Search, Category Filters, and Sort -->
+      <div class="download-control-panel">
+        <div class="search-and-sort-bar">
+          <!-- Search Input with terminal prompt -->
+          <div class="search-input-wrap">
+            <span class="search-prompt-icon">&gt;</span>
+            <input type="text" id="search-input" class="search-input"
+              placeholder="grep / search file by name, keyword, or description..." autocomplete="off">
+          </div>
+
+          <!-- Sort Dropdown -->
+          <div class="sort-select-wrap">
+            <select id="sort-select" class="sort-select" aria-label="Sort files">
+              <option value="default">Sort: Default</option>
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="date-newest">Date: Newest First</option>
+              <option value="date-oldest">Date: Oldest First</option>
+              <option value="size-largest">Size: Largest</option>
+              <option value="size-smallest">Size: Smallest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="category-filter-tabs" id="category-tabs">
+          <!-- Rendered via JavaScript -->
+        </div>
+
+        <!-- Filter info -->
+        <div class="filter-results-info">
+          <span id="results-counter" class="text-green">Loading files...</span>
+          <span class="mono text-dim">DIRECT LOCAL &amp; REPO MIRRORS</span>
+        </div>
+      </div>
+
+      <!-- Downloads List Grid (Rendered dynamically from js/downloads.js) -->
+      <div class="downloads-grid" id="downloads-grid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+   * GITHUB REPOSITORIES SECTION
+   * ============================================================================== -->
+  <section class="section" id="github">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">[ 04 // OPEN_SOURCE ]</span>
+        <h2 class="section-title">GITHUB REPOSITORIES</h2>
+        <p class="section-desc">Akses langsung ke source code, commit history, dan rilis resmi di GitHub.</p>
+      </div>
+
+      <div class="github-repos-grid" id="github-repos-grid">
+        <!-- Repo Card 1 -->
+        <a href="https://github.com/SR-RG/tenfourfox_quickjs_es2020_modern_fix_macosx_tiger" target="_blank"
+          rel="noopener noreferrer" class="repo-card">
+          <div>
+            <div class="repo-header">
+              <span class="repo-name">tenfourfox_quickjs_es2020_modern_fix</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </div>
+            <p class="repo-desc">Native C QuickJS ES2020 injection &amp; XPCOM DOM bridge for TenFourFox Gecko 45 on Mac
+              OS X 10.4 Tiger.</p>
+          </div>
+          <div class="repo-footer">
+            <span><span class="repo-lang-dot" style="background:#555555;"></span>C / JavaScript</span>
+            <span class="text-cyan">Releases available</span>
+          </div>
+        </a>
+
+        <!-- Repo Card 2 -->
+        <a href="https://github.com/SR-RG" target="_blank" rel="noopener noreferrer" class="repo-card"
+          data-profile-href="githubUrl">
+          <div>
+            <div class="repo-header">
+              <span class="repo-name">android_system_tweaker</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </div>
+            <p class="repo-desc">Automated safe debloater, battery governor tweaks, and hidden feature unlocker via ADB
+              shell.</p>
+          </div>
+          <div class="repo-footer">
+            <span><span class="repo-lang-dot" style="background:#89e051;"></span>Shell</span>
+            <span class="text-green">Active</span>
+          </div>
+        </a>
+
+        <!-- Repo Card 3 -->
+        <a href="https://github.com/SR-RG" target="_blank" rel="noopener noreferrer" class="repo-card"
+          data-profile-href="githubUrl">
+          <div>
+            <div class="repo-header">
+              <span class="repo-name">retro_media_enabler</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </div>
+            <p class="repo-desc">Hardware-accelerated native H.264 MP4 playback dylib patches for vintage PowerPC and
+              Intel Macs.</p>
+          </div>
+          <div class="repo-footer">
+            <span><span class="repo-lang-dot" style="background:#f34b7d;"></span>C++</span>
+            <span class="text-purple">Stable</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+   * FOOTER
+   * ============================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="#home" class="nav-brand">
+            <div class="brand-logo-wrap">
+              <img src="./assets/images/Gemini_Generated_Image_p4wulop4wulop4wu.jpg" alt="Developer Hub Logo"
+                class="brand-logo-img">
+            </div>
+            <div class="brand-title-group">
+              <span class="brand-main-text">SR-RG<span class="text-green">.DEV</span></span>
+              <span class="brand-sub-text">PROJECTS &amp; DOWNLOAD HUB</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Website resmi SR-RG untuk mengarsipkan dan membagikan proyek, tools, firmware, dan modifikasi sistem secara
+            terbuka.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">&gt; Home</a></li>
+            <li><a href="#about" class="footer-link">&gt; About</a></li>
+            <li><a href="#projects" class="footer-link">&gt; Projects</a></li>
+            <li><a href="#downloads" class="footer-link">&gt; Download Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Repositories</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/SR-RG" target="_blank" rel="noopener noreferrer" class="footer-link"
+                data-profile-href="githubUrl">&gt; GitHub Profile (@SR-RG)</a></li>
+            <li><a href="#downloads" class="footer-link">&gt; Releases</a></li>
+            <li><a href="#projects" class="footer-link">&gt; Source Archives</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 SR-RG. All rights reserved.</span>
+        <div class="footer-visitor-wrap mono">
+          <span class="text-dim">TOTAL_VISITORS:</span>
+          <span class="visitor-counter-badge" id="footer-visitor-count">000001</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================================================
+   * PROJECT DETAILS MODAL
+   * ============================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <span class="modal-title" id="modal-project-title">[SPECIFICATION]</span>
+        <button class="btn-modal-close" id="modal-close-btn" aria-label="Close modal window">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top floating button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+    &#8593;
+  </button>
+
+  <!-- JavaScript Modules (Separated Data and Presentation) -->
+  <script src="./js/downloads.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
