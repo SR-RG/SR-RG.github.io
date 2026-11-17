@@ -240,7 +240,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 2. Render Project Showcase
   function renderProjects() {
-    if (!projectsGrid || typeof PROJECTS_DATA === "undefined") return;
+    if (!projectsGrid) return;
+    if (typeof PROJECTS_DATA === "undefined" || !Array.isArray(PROJECTS_DATA) || PROJECTS_DATA.length === 0) {
+      projectsGrid.innerHTML = `
+        <div class="empty-state" style="grid-column: 1 / -1; padding: 40px 20px;">
+          <div class="empty-icon mono">[ 0 // ARCHIVE_STANDBY ]</div>
+          <p class="text-cyan mono" style="font-size: 1rem; margin-top: 10px;">PROJECTS_IN_PREPARATION</p>
+          <p class="text-dim" style="font-size: 0.88rem; margin-top: 8px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            Katalog proyek modifikasi dan tools sedang dalam tahap kurasi &amp; persiapan rilis. Proyek akan ditampilkan secara bertahap saat dirilis ke publik.
+          </p>
+        </div>
+      `;
+      return;
+    }
 
     projectsGrid.innerHTML = PROJECTS_DATA.map(proj => {
       const statusClass = `status-${proj.statusType || "primary"}`;
@@ -324,12 +336,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (list.length === 0) {
+      const isSearchOrFilter = currentCategory !== "all" || currentSearchQuery.trim() !== "";
       downloadsGrid.innerHTML = `
-        <div class="empty-state">
-          <div class="empty-icon">[ ! ]</div>
-          <p class="text-cyan mono">NO_FILES_MATCHED_QUERY</p>
-          <p class="text-dim" style="font-size: 0.85rem; margin-top: 6px;">
-            Coba ubah kata kunci pencarian atau pilih kategori lain.
+        <div class="empty-state" style="padding: 40px 20px;">
+          <div class="empty-icon mono">[ 0 // RELEASES_STANDBY ]</div>
+          <p class="text-green mono" style="font-size: 1rem; margin-top: 10px;">${isSearchOrFilter ? "NO_FILES_MATCHED_QUERY" : "NO_FILES_PUBLISHED_YET"}</p>
+          <p class="text-dim" style="font-size: 0.88rem; margin-top: 8px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            ${isSearchOrFilter 
+              ? "Tidak ada file yang cocok dengan kata kunci atau kategori yang Anda pilih." 
+              : "Belum ada berkas unduhan publik yang diunggah. Modifikasi sistem dan script resmi akan muncul di sini segera setelah dirilis."}
           </p>
         </div>
       `;
