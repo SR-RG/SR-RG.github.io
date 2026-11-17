@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="empty-icon mono">[ 0 // ARCHIVE_STANDBY ]</div>
           <p class="text-cyan mono" style="font-size: 1rem; margin-top: 10px;">PROJECTS_IN_PREPARATION</p>
           <p class="text-dim" style="font-size: 0.88rem; margin-top: 8px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-            Katalog proyek modifikasi dan tools sedang dalam tahap kurasi &amp; persiapan rilis. Proyek akan ditampilkan secara bertahap saat dirilis ke publik.
+            Project showcase and documentation are currently in preparation. Official releases and open-source repositories will be published here soon.
           </p>
         </div>
       `;
@@ -343,8 +343,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <p class="text-green mono" style="font-size: 1rem; margin-top: 10px;">${isSearchOrFilter ? "NO_FILES_MATCHED_QUERY" : "NO_FILES_PUBLISHED_YET"}</p>
           <p class="text-dim" style="font-size: 0.88rem; margin-top: 8px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.6;">
             ${isSearchOrFilter 
-              ? "Tidak ada file yang cocok dengan kata kunci atau kategori yang Anda pilih." 
-              : "Belum ada berkas unduhan publik yang diunggah. Modifikasi sistem dan script resmi akan muncul di sini segera setelah dirilis."}
+              ? "No files matched your search query or selected category filter." 
+              : "No public download releases have been published yet. System modifications, tools, and scripts will appear here once released."}
           </p>
         </div>
       `;

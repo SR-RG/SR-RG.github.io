@@ -2,18 +2,18 @@
  * ==============================================================================
  * PROJECT PROFILE & DOWNLOAD HUB - DATA CONFIGURATION
  * ==============================================================================
- * File ini adalah pusat pengelolaan seluruh data profil, proyek, dan file unduhan.
+ * Central configuration module for developer profile, projects, and downloads.
  * ==============================================================================
  */
 
-// Konfigurasi Profil & Info Developer
+// Developer Profile Configuration
 const PROFILE_CONFIG = {
   developerName: "SR-RG",
   alias: "SR-RG",
   badge: "SYSTEM ONLINE // v2.4.0",
   tagline: "SR-RG // Developer, System Modder, and Retro-Computing Enthusiast",
-  shortBio: "Pusat resmi berbagi karya proyek, modifikasi sistem, tools otomasi, dan repository publik oleh SR-RG.",
-  aboutDescription: "Halo! Saya SR-RG, pengembang dan enthusiast modifikasi sistem. Melalui portal ini, saya mengarsipkan dan membagikan berbagai tools, script otomasi, patch sistem, dan perbaikan software yang dapat diakses serta diunduh secara bebas oleh komunitas.",
+  shortBio: "Official project showcase, system modding archive, and public download hub by SR-RG.",
+  aboutDescription: "Hello! I am SR-RG, an independent software developer and system modification enthusiast. Through this portal, I archive and distribute specialized tools, automation scripts, firmware patches, and legacy system enhancements freely accessible to the global community.",
   githubUrl: "https://github.com/SR-RG",
   githubUsername: "SR-RG",
   email: "developer@example.com",
@@ -35,7 +35,7 @@ const PROFILE_CONFIG = {
   }
 };
 
-// Kategori File yang Didukung
+// Supported File Categories
 const DOWNLOAD_CATEGORIES = [
   { id: "all", label: "All Files", icon: "folder" },
   { id: "android", label: "Android", icon: "smartphone" },
@@ -47,12 +47,12 @@ const DOWNLOAD_CATEGORIES = [
   { id: "other", label: "Other Files", icon: "file" }
 ];
 
-// Data Proyek Unggulan (Project Showcase)
-// Kosong secara default. Proyek akan muncul begitu Anda menambahkannya.
+// Featured Projects Showcase
+// Empty by default. Add objects here when ready to showcase projects.
 const PROJECTS_DATA = [];
 
-// Data File Download (Download Center)
-// Kosong secara default. File unduhan akan muncul begitu Anda menambahkannya.
+// Download Center Files
+// Empty by default. Add objects here when ready to release download packages.
 const DOWNLOADS_DATA = [];
 
 // Helper Function: Filter Downloads
